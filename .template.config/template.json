@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AylanJ123",
+  "classifications": [ "Core Keeper Modding", "BepInEx" ],
+  "identity": "org.AylanJ123.SNHB",
+  "name": "Some Nice Health Bars",
+  "shortName": "SNHB",
+  "sourceName": "SNHB",
+  "preferNameDirectory":true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
