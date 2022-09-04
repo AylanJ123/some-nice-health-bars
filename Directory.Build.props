@@ -17,7 +17,7 @@
         <SteamDir>$([MSBuild]::EnsureTrailingSlash('$(SteamDir)'))</SteamDir>
         <BepInExDir>$(CKGameDir)BepInEx\core\</BepInExDir>
         <BepPlugins>$(CKGameDir)BepInEx\plugins\</BepPlugins>
-        <PluginOutputDirectory>$(BepPlugins)CKModTemplate\</PluginOutputDirectory>
+        <PluginOutputDirectory>$(BepPlugins)SNHB\</PluginOutputDirectory>
     </PropertyGroup>
 
     <PropertyGroup Label="Common Properties">
@@ -38,8 +38,8 @@
 
         <PackageVersion>$(AssemblyVersion)</PackageVersion>
         
-        <BepInExPluginGuid>org.example.CKModTemplate</BepInExPluginGuid>
-        <BepInExPluginName>CKModTemplate</BepInExPluginName>
+        <BepInExPluginGuid>org.aylanj123.snhb</BepInExPluginGuid>
+        <BepInExPluginName>Some Nice Health Bars</BepInExPluginName>
         <BepInExPluginVersion>1.0.0</BepInExPluginVersion>
     </PropertyGroup>
 

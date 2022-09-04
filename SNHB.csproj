@@ -4,10 +4,6 @@
     <Folder Include="Patches" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BepInEx.BaseLib" Version="5.4.21" />
-    <PackageReference Include="UnityEngine" Version="5.6.1" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Update="C:\Program Files %28x86%29\Steam\steamapps\common\Core Keeper\BepInEx\core\AssemblyUnhollower.dll">
       <EmbedInteropTypes>false</EmbedInteropTypes>
       <Private>false</Private>
