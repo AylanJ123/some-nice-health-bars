@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Folder Include="Patches" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Update="C:\Program Files %28x86%29\Steam\steamapps\common\Core Keeper\BepInEx\core\AssemblyUnhollower.dll">
       <EmbedInteropTypes>false</EmbedInteropTypes>
       <Private>false</Private>

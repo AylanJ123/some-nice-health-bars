@@ -1,22 +1,27 @@
 ﻿using BepInEx;
 using BepInEx.IL2CPP;
 using BepInEx.Logging;
+using CoreLib;
 using HarmonyLib;
+using System.Reflection;
 
 namespace SNHB
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    [BepInDependency("com.le4fless.corelib")]
+    [BepInDependency(CoreLibPlugin.GUID)]
     [BepInProcess("CoreKeeper.exe")]
     public class SNHBPlugin : BasePlugin
     {
-        static ManualLogSource logger;
+        internal static ManualLogSource logger;
         public override void Load()
         {
             logger = Log;
-            logger.LogInfo($"{PluginInfo.PLUGIN_NAME} mod is loaded!");
             Harmony harmony = new(PluginInfo.PLUGIN_GUID);
             harmony.PatchAll();
+            logger.LogInfo($"{PluginInfo.PLUGIN_NAME} mod is loaded!");
+            foreach (MethodBase method in harmony.GetPatchedMethods()) {
+                logger.LogInfo($"{method.Name} method is loaded!");
+            }
         }
     }
 }
